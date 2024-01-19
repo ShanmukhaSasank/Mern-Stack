@@ -1,11 +1,12 @@
 
 import { AppBar, Toolbar, styled, Typography, Box } from '@mui/material';
 import { yellow } from '@mui/material/colors';
+import Search from './Search';
 
 
 const StyledHeader = styled(AppBar)`
     background : #2874f0;
-     height : 55px;
+     height : 60px;
 `
 const Component = styled(Box)`
     margin-left : 12%;
@@ -27,7 +28,7 @@ function Header() {
     return (
         <div>
             <StyledHeader>
-                <Toolbar>
+                <Toolbar style={{minheight : 55}}>
                 <Component>
 
                     <img src={logoURL} alt="logo" style={{ width: 75 }} />
@@ -39,6 +40,7 @@ function Header() {
                         </SubHeading>
                     </Box>
                 </Component>
+                <Search />
                 </Toolbar>
             </StyledHeader>
         </div>
