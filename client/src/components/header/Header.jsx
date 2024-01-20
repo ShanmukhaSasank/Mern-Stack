@@ -1,24 +1,29 @@
 
 import { AppBar, Toolbar, styled, Typography, Box } from '@mui/material';
-import { yellow } from '@mui/material/colors';
+// import { yellow } from '@mui/material/colors';
 import Search from './Search';
+import CustomButton from './CustomButtons';
 
 
 const StyledHeader = styled(AppBar)`
     background : #2874f0;
-     height : 60px;
 `
 const Component = styled(Box)`
-    margin-left : 12%;
+    margin-left : 7%;
     line-height : 0;
 `
 const SubHeading = styled(Typography)`
     font-size : 10px;
     font-style : italic;
 `
-const PlusImage = styled('img')`
-    width : 10px;
-    height : 10px;
+const PlusImage = styled('img')({
+    width : 10,
+    height : 10,
+    marginLeft: 4
+})
+
+const CustomButtonWrapper = styled(Box)`
+    margin: 0 5% 0 auto;
 `
 
 function Header() {
@@ -28,23 +33,27 @@ function Header() {
     return (
         <div>
             <StyledHeader>
-                <Toolbar style={{minheight : 55}}>
-                <Component>
+                <Toolbar style={{minheight : 55 }}>
+                    <Component>
 
-                    <img src={logoURL} alt="logo" style={{ width: 75 }} />
-                    <Box style={{display : 'flex'}}> 
-                        <SubHeading> Explore 
-                            <Box component="span" style={{color : '#FFE500'}}> Plus
+                        <img src={logoURL} alt="logo" style={{ width: 75 }} />
+                        <Box style={{display : 'flex'}}> 
+                            <SubHeading> Explore
+                                <Box component="span" style={{color : '#FFE500'}}> Plus
+                                </Box>
+                            </SubHeading>
                             <PlusImage src={subURL} alt="plus"/>
-                            </Box>
-                        </SubHeading>
-                    </Box>
-                </Component>
-                <Search />
+                        </Box>
+                    </Component>
+                    <Search />
+                    <CustomButtonWrapper>
+                        <CustomButton />
+                    </CustomButtonWrapper>
                 </Toolbar>
             </StyledHeader>
         </div>
     )
 }
+
 
 export default Header;
