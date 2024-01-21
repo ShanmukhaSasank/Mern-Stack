@@ -7,9 +7,10 @@ import CustomButton from './CustomButtons';
 
 const StyledHeader = styled(AppBar)`
     background : #2874f0;
+    height : 50px;
 `
 const Component = styled(Box)`
-    margin-left : 7%;
+    margin-left : 4%;
     line-height : 0;
 `
 const SubHeading = styled(Typography)`
@@ -26,6 +27,10 @@ const CustomButtonWrapper = styled(Box)`
     margin: 0 5% 0 auto;
 `
 
+const Toolbarwrapper = styled(Toolbar)`
+    display : flex;
+`
+
 function Header() {
 
     const logoURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png';
@@ -33,7 +38,7 @@ function Header() {
     return (
         <div>
             <StyledHeader>
-                <Toolbar style={{minheight : 55 }}>
+                <Toolbarwrapper style={{minHeight: 50}}>
                     <Component>
 
                         <img src={logoURL} alt="logo" style={{ width: 75 }} />
@@ -49,7 +54,7 @@ function Header() {
                     <CustomButtonWrapper>
                         <CustomButton />
                     </CustomButtonWrapper>
-                </Toolbar>
+                </Toolbarwrapper>
             </StyledHeader>
         </div>
     )

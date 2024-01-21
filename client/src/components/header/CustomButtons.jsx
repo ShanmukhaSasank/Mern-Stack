@@ -21,7 +21,7 @@ const LoginButton = styled(Button)`
     background : #FFFFFF;
     text-transform : none;
     padding: 5px 40px;
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: none;
     font-weight: 600;
     height: 32px;
