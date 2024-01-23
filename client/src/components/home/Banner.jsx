@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-
-import Carousel from 'react-multi-carousel'
-import "react-multi-carousel/lib/styles.css";
-import { bannerData } from '../../Constants/data';
-import {styled} from '@mui/material'
-
-=======
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 import {bannerData} from '../../constants/data';
@@ -15,7 +7,7 @@ const Image = styled('img')({
     height : 240,
     width : '100%'
 })
->>>>>>> origin/SHA-1-Header
+
 const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -31,11 +23,6 @@ const responsive = {
     }
   };
 
-<<<<<<< HEAD
-  const Image =styled('img')({
-    height:240 ,
-    width: '100%'
-  })
 
 const Banner = () =>{
     return(
@@ -56,28 +43,6 @@ const Banner = () =>{
                         <Image src={data.url} alt="banner"/>
                 ))
             }
-=======
-const Banner = () =>{
-    
-    return(
-        <Carousel  
-        swipeable={false}
-        draggable={false}
-        responsive={responsive}
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={4000}
-        keyBoardControl={true}
-        containerClass="carousel-container"
-        dotListClass="custom-dot-list-style"
-        >
-            {
-                bannerData.map(data=>(
-                    <Image src={data.url} alt="Banners" />
-                ))
-            }
-
->>>>>>> origin/SHA-1-Header
         </Carousel>
     )
 }

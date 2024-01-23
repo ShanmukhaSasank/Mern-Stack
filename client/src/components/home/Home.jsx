@@ -1,6 +1,6 @@
 
 import Banner from "./Banner";
-import NavBar from "./NavBar";
+import NavBar from "./Navbar";
 import { Box, styled } from "@mui/material";
 
 //you cannot return two parent components in jsx
