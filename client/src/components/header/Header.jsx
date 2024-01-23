@@ -1,14 +1,15 @@
 
 import { AppBar, Toolbar, styled, Typography, Box } from '@mui/material';
 import { yellow } from '@mui/material/colors';
-
+import Search from './Search';
+import CustomButtons from './CustomButtons';
 
 const StyledHeader = styled(AppBar)`
     background : #2874f0;
-     height : 55px;
+     height : 50px;
 `
 const Component = styled(Box)`
-    margin-left : 12%;
+    margin-left : 14%;
     line-height : 0;
 `
 const SubHeading = styled(Typography)`
@@ -18,6 +19,15 @@ const SubHeading = styled(Typography)`
 const PlusImage = styled('img')`
     width : 10px;
     height : 10px;
+    margin-left : 4px;
+`
+const ToolbarWrapper = styled(Toolbar)`
+    display : flex;
+    min-height : 50px !important;   
+`
+
+const CustomButtonWrapper = styled(Box)`
+    margin : 0 5% 0 auto;
 `
 
 function Header() {
@@ -27,9 +37,8 @@ function Header() {
     return (
         <div>
             <StyledHeader>
-                <Toolbar>
-                <Component>
-
+                <ToolbarWrapper>
+                <Component> {/* For the flipkart logo */}
                     <img src={logoURL} alt="logo" style={{ width: 75 }} />
                     <Box style={{display : 'flex'}}> 
                         <SubHeading> Explore 
@@ -39,7 +48,11 @@ function Header() {
                         </SubHeading>
                     </Box>
                 </Component>
-                </Toolbar>
+                <Search/>
+                <CustomButtonWrapper>
+                    <CustomButtons/>
+                </CustomButtonWrapper>
+                </ToolbarWrapper>   
             </StyledHeader>
         </div>
     )
