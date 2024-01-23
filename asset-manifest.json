@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Mern-Stack/static/css/main.cf4f3d2a.css",
+    "main.js": "/Mern-Stack/static/js/main.87b81bda.js",
+    "static/js/787.d5fa4d18.chunk.js": "/Mern-Stack/static/js/787.d5fa4d18.chunk.js",
+    "static/media/revicons.eot": "/Mern-Stack/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/Mern-Stack/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/Mern-Stack/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/Mern-Stack/index.html",
+    "main.cf4f3d2a.css.map": "/Mern-Stack/static/css/main.cf4f3d2a.css.map",
+    "main.87b81bda.js.map": "/Mern-Stack/static/js/main.87b81bda.js.map",
+    "787.d5fa4d18.chunk.js.map": "/Mern-Stack/static/js/787.d5fa4d18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf4f3d2a.css",
+    "static/js/main.87b81bda.js"
+  ]
+}
