@@ -1,12 +1,11 @@
-
 import { AppBar, Toolbar, styled, Typography, Box } from '@mui/material';
-import { yellow } from '@mui/material/colors';
 import Search from './Search';
 import CustomButtons from './CustomButtons';
 
 const StyledHeader = styled(AppBar)`
     background : #2874f0;
      height : 50px;
+     box-shadow : none;
 `
 const Component = styled(Box)`
     margin-left : 14%;
@@ -16,11 +15,12 @@ const SubHeading = styled(Typography)`
     font-size : 10px;
     font-style : italic;
 `
-const PlusImage = styled('img')`
-    width : 10px;
-    height : 10px;
-    margin-left : 4px;
-`
+const PlusImage = styled('img')({
+    width : 10,
+    height : 10,
+    marginLeft : 4,
+})
+
 const ToolbarWrapper = styled(Toolbar)`
     display : flex;
     min-height : 50px !important;   
