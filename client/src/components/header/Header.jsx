@@ -1,4 +1,3 @@
-
 import { AppBar, Toolbar, styled, Typography, Box } from '@mui/material';
 // import { yellow } from '@mui/material/colors';
 import Search from './Search';

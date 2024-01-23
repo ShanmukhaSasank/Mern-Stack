@@ -1,36 +1,36 @@
 import { Box, styled, Typography } from "@mui/material";
+import { navData } from "../../constants/data";
 
-import { navData } from "../../Constants/data";
-
-const Components = styled(Box)`
-    display : flex;
-    margin: 50px 100px 0 100px;
-    justify-content: space-between;
-`
 const Container = styled(Box)`
-    padding: 12px 8px;
-    text-align: center;
+    text-align : center;
+    padding : 12px 8px;
 `
-
+const Components = styled(Box)`
+    display: flex;
+    justify-content : space-between;
+    margin : 50px 100px 0px 100px;
+`
 const Text = styled(Typography)`
+    font-weight : 600;
     font-size : 14px;
-    font-weight: 600;
-    font-family: inherit;
+    font-family : inherit;
 `
 
-const NavBar = () =>{
+const Navbar = () => {
     return(
         <Components>
             {
-                navData.map(data =>(
+                navData.map(data=>(
                     <Container>
-                        <img src={data.url} alt="nav" style={{width: 65}}/>
-                        <Text>{data.text}</Text>
+                    <img src={data.url} alt="Navpics" style = {{width : 65}}/>
+                    <Text>
+                        {data.text}
+                    </Text>
                     </Container>
                 ))
             }
         </Components>
-    )
+    );
 }
 
-export default NavBar;
+export default Navbar;
